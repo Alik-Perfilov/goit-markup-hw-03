@@ -163,13 +163,6 @@ display:block;
     align-items: center;
 }
 
-.container {
-
-  outline: 5px;
-  border-bottom: black;
-  border-left: black;
-  border-right: black;
-}
 
 .portfolio-container {
     width: 1200px;
