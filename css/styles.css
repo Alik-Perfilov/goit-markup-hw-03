@@ -186,6 +186,12 @@ display:block;
 }
 
 
+.portfolio-section {
+
+padding-top: 94px;
+padding-bottom: 94px;
+
+}
 
 .section-title {
   color: var(--title-text-color);
@@ -247,7 +253,7 @@ display:block;
   display: flex;
   flex-wrap: wrap;
   margin-top: 94px;
-  
+  padding-left: 0;
 }
 
 .grid {
@@ -259,8 +265,8 @@ display:block;
 }
 
 
-.grid .item-grid {
-  flex-basis: calc((100% - 30px * 3) / 3);
+.grid > .item-grid {
+  flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
 
@@ -300,7 +306,24 @@ address {
   text-align: center;
   display: flex;
   justify-content: center;
-  margin-top: 94px;
+  margin-bottom: 50px;
+}
+
+.buttons-list .buttons + .buttons {
+
+margin-left:8px;
+
+}
+
+
+.buttons-container {
+
+margin-left:auto;
+margin-right:auto;
+width: 1200px;
+padding-left: 15px;
+padding-right: 15px;
+
 }
 
 
