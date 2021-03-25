@@ -323,6 +323,12 @@ address {
   color: var(--secondary-text-color);
 }
 
+.buttons-list .buttons + .buttons {
+
+margin-left:8px;
+
+}
+
 .buttons-list {
   list-style: none;
   text-align: center;
@@ -331,11 +337,7 @@ address {
   margin-bottom: 50px;
 }
 
-.buttons-list .buttons + .buttons {
 
-margin-left:8px;
-
-}
 
 
 .buttons-container {
