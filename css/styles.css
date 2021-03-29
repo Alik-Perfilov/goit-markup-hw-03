@@ -45,12 +45,19 @@ h5,
 h6,
 p {
   margin-top:0;
+  text-align: center;
 }
 
 img {
 
 display:block;
 
+}
+
+.link {
+  list-style: none;
+  text-decoration: none;
+  color: var(--primary-text-color);
 }
 
 .list {
@@ -74,12 +81,16 @@ display:block;
   text-decoration: none;
 }
 
+
+
+
 /*Site Nav*/
+
 
 .site-nav {
   display: flex;
   justify-content: space-around;
-  
+  padding-bottom: 16px;
 }
 
 .site-nav li {
@@ -121,7 +132,7 @@ display:block;
   
 }
 
-.contacts-list {
+.contacts .contacts-list {
   color: var(--primary-text-color);
   font-family: inherit;
   font-style: normal;
@@ -134,6 +145,11 @@ display:block;
   padding-left: 0;
 }
 
+.contacts-list {
+
+list-style: none;
+padding-left: 0;
+}
 
 .contacts .contacts-list .link:hover,
 .contacts .contacts-list .link:focus {
@@ -148,6 +164,7 @@ display:block;
 
 
 .link {
+  list-style: none;
   text-decoration: none;
   color: var(--primary-text-color);
 }
@@ -174,6 +191,14 @@ display:block;
   margin-bottom: 30px;
   padding-top: 200px;
   
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 
@@ -266,7 +291,24 @@ padding-bottom: 94px;
   flex-wrap: nowrap;
   margin-top: 94px;
   justify-content: space-evenly;
+  padding-left: 0;
+  margin-left: -30px;
+  margin-top: -30px;
 }
+
+
+.section-title-list .section-title-list-item + .section-title-list-item {
+margin-left: 30px;
+
+}
+
+.section-title-list .section-title-list-item {
+  flex-basis: calc((100% - 30px * 4) / 4);
+  margin-left: 30px;
+  margin-top: 30px;
+
+}
+
 
 .section-title-list_second {
   font-family: inherit;
@@ -286,6 +328,12 @@ padding-bottom: 94px;
 
 }
 
+.section-title-second {
+  
+  margin-left: -30px;
+  margin-top: -30px;
+
+}
 
 .grid > .item-grid {
   flex-basis: calc(100% / 3 - 30px);
@@ -429,4 +477,40 @@ padding-right: 15px;
  padding-left: 215px;
  padding-bottom: 60px;
  
+}
+
+.benefits-container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 94px;
+    margin-top: 94px;
+
+}
+
+
+.business-container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 94px;
+  margin-top: 94px;
+
+}
+
+
+
+.command-container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 50px;
+  margin-bottom: 94px;
+
 }
