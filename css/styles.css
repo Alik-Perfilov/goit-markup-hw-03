@@ -42,6 +42,7 @@ h5,
 h6,
 p {
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 img {
@@ -50,6 +51,9 @@ img {
 
 .nav-container {
   color: var(--title-text-color);
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
 }
 
 .link {
@@ -72,7 +76,6 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
-  padding-left: 215px;
   margin-right: 93px;
 }
 
@@ -91,8 +94,9 @@ img {
 
 .site-nav {
   display: flex;
-  padding-bottom: 16px;
   padding-left: 0;
+  margin: 0;
+  align-items: center;
 }
 
 
@@ -150,9 +154,9 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
-  display: flex;
+  display: inline-flex;
   justify-content: space-evenly;
-  padding-left: 300px;
+  margin: 0 auto;
 }
 
 .contacts .contacts-list-item + .contacts-list-item {
@@ -200,7 +204,8 @@ margin-left: 50px;
 .hero {
   background-color: var(--hero-bg-color);
   text-align: center;
-  margin-top: -30px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -214,7 +219,7 @@ margin-left: 50px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
-  padding-top: 200px;
+
 }
 
 p {
@@ -261,6 +266,7 @@ p {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  padding-bottom: 10px;
 }
 
 .section-title-text {
@@ -282,6 +288,7 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  margin-bottom: 50px;
 }
 
 .section-title-third {
@@ -318,7 +325,9 @@ p {
   margin-top: 30px;
 }
 
-
+.portfolio-text {
+  padding-bottom: 4px;
+}
 
 .section-title-list_second {
   font-family: inherit;
@@ -330,6 +339,15 @@ p {
   margin-bottom: 0;
 }
 
+section.section-team.list {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-business {
+  padding-bottom: 94px;
+}
+
 .grid {
   display: flex;
   flex-wrap: wrap;
@@ -337,10 +355,6 @@ p {
   margin-top: -30px;
 }
 
-.section-title-second {
-  margin-left: -30px;
-  margin-top: -30px;
-}
 
 .grid > .item-grid {
   flex-basis: calc(100% / 3 - 30px);
@@ -407,7 +421,6 @@ address {
   min-height: 50px;
   left: 700px;
   top: 430px;
-  margin-bottom: 200px;
   letter-spacing: 0.06em;
   border-radius: 4px;
   border: transparent;
@@ -455,8 +468,18 @@ address {
   letter-spacing: 0.1em;
   background-color: var(--secondary-text-color);
   padding-top: 24px;
-  padding-bottom: 12px;
+  padding-bottom: 24px;
   border-bottom: 1px solid var(--header-border-bottom-color);
+}
+
+.header-container {
+  width:1200px;  
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
 }
 
 .footer {
@@ -465,12 +488,25 @@ address {
   line-height: 1.33;
   letter-spacing: 0.1em;
   background-color: var(--hero-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.footer-container {
-  padding-top: 60px;
-  padding-left: 215px;
-  padding-bottom: 60px;
+.footer.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+.section-benefits {
+
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .benefits-container {
@@ -479,8 +515,7 @@ address {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 94px;
-  margin-top: 94px;
+  
 }
 
 .business-container {
@@ -489,8 +524,6 @@ address {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 94px;
-  margin-top: 94px;
 }
 
 /*Command section*/
@@ -501,8 +534,6 @@ address {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 50px;
-  margin-bottom: 94px;
 }
 
 .name {
@@ -517,4 +548,8 @@ address {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+}
+
+.position {
+  margin-top: 10px;
 }
