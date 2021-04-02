@@ -9,6 +9,7 @@
   --secondary-bg-color: #f5f4fa;
   --header-border-bottom-color: #ececec;
   --flex-element-border-color: #eeeeee;
+  --footer-link-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -99,7 +100,6 @@ img {
   align-items: center;
 }
 
-
 .site-nav .link {
   font-family: inherit;
   font-style: normal;
@@ -144,7 +144,6 @@ img {
   margin-left: 50px;
 }
 
-
 .contacts {
   color: var(--primary-text-color);
   font-family: inherit;
@@ -160,10 +159,12 @@ img {
 }
 
 .contacts .contacts-list-item + .contacts-list-item {
-margin-left: 50px;
-
+  margin-left: 50px;
 }
 
+.email {
+  margin-bottom: 9px;
+}
 
 .contacts .contacts-list {
   color: var(--primary-text-color);
@@ -181,6 +182,7 @@ margin-left: 50px;
 .contacts-list {
   list-style: none;
   padding-left: 0;
+  margin-bottom: 0;
 }
 
 .contacts .contacts-list .link:hover,
@@ -196,7 +198,7 @@ margin-left: 50px;
 .link {
   list-style: none;
   text-decoration: none;
-  color: var(--primary-text-color);
+  color: var(--footer-link-color);
 }
 
 /*Hero*/
@@ -219,7 +221,6 @@ margin-left: 50px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
-
 }
 
 p {
@@ -266,7 +267,7 @@ p {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .section-title-text {
@@ -313,6 +314,7 @@ p {
   padding-left: 0;
   margin-left: -30px;
   margin-top: -30px;
+  margin-bottom: 0;
 }
 
 .section-title-list .section-title-list-item + .section-title-list-item {
@@ -355,7 +357,6 @@ section.section-team.list {
   margin-top: -30px;
 }
 
-
 .grid > .item-grid {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
@@ -387,6 +388,7 @@ address {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+  margin-top: 20px;
 }
 
 .buttons-list .buttons + .buttons {
@@ -399,6 +401,7 @@ address {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  margin-top: 0;
 }
 
 .buttons-container {
@@ -473,7 +476,7 @@ address {
 }
 
 .header-container {
-  width:1200px;  
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -493,18 +496,16 @@ address {
 }
 
 .footer.container {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 0;
-    padding-bottom: 0;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
-
 .section-benefits {
-
   padding-bottom: 94px;
   padding-top: 94px;
 }
@@ -515,7 +516,6 @@ address {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  
 }
 
 .business-container {
